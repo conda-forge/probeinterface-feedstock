@@ -1,5 +1,5 @@
 {% set name = "probeinterface" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/probeinterface-{{ version }}.tar.gz
-  sha256: 38d7436a771451400ec119e7752bf3b0420faccb7b64c75c98964fa3982ed64f
+  sha256: e036412bac4608569ddd61403d8408548715f6d3d03af2a68c344426b1a5668c
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - packaging
+    - requests
 
 test:
   imports:
