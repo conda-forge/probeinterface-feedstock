@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - packaging
+    - requests
 
 test:
   imports:
