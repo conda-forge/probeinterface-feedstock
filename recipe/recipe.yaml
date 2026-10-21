@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: probeinterface
-  version: "0.4.1"
+  version: "0.4.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/probeinterface-${{ version }}.tar.gz
-  sha256: 95ff9abdd909ee73bcecb9dd08f9136fc67cc0d4993203cb1d38a05ccb94714b
+  sha256: d859f2f7298cc255c8a94370d06b1b7f1328f883d37d7032f8b3eb05705a34bc
 
 build:
   number: 0
